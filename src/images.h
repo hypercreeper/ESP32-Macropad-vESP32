@@ -1818,4 +1818,5 @@ else if (key == "Comment")
     }
 
 }
-String imageLabels[] = {"Copy", "Brush", "Crop", "Cursor", "Cut", "Debug", "Down", "Enter", "Escape", "Keyboard", "Left", "Move", "Mute", "Next", "Paintbucket", "Pan", "Paste", "Play/Pause", "Previous", "Right", "Run", "Shapes", "Stop", "Text", "Up", "Volume Down", "Volume Up", "Comment"};
+String imageLabels[] = {"Copy", "Brush", "Crop", "Cursor", "Cut", "Debug", "Down", "Enter", "Escape", "Keyboard", "Left", "Move", "Mute", "Next", "Paintbucket", "Pan", "Paste", "Play/Pause", "Previous", "Right", "Run", "Shapes", "Stop", "Text", "Up", "Volume Down", "Volume Up", "Comment", "Back", "Forward", "Reload", "Zoom In", "Zoom Out", "Undo", "Redo", "Volume Mixer", "Search", "Home", "Right Click"};
+int imageCount = 39;

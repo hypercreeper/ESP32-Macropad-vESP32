@@ -1025,7 +1025,7 @@ void setup()
   WiFi.mode(WIFI_STA);
   tft.println(WiFi.macAddress());
   Serial.println("Loading Images");
-  for (int i = 0; i < 28; i++)
+  for (int i = 0; i < imageCount; i++)
   {
     Serial.print("Begin loading " + String(i) + ": " + imageLabels[i] + "...");
     images[imageLabels[i]] = (char *)imageDatas[i];
