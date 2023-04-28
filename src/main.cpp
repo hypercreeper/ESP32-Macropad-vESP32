@@ -661,7 +661,260 @@ void redrawIcons(int i)
       Serial.println(rc);
     }
   }
+  else if (buttonsArray.btnImages[i] == "Back")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)back, sizeof(back), pngDraw);
 
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Forward")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)forward, sizeof(forward), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Reload")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)reload, sizeof(reload), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Zoom In")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)zoomin, sizeof(zoomin), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Zoom Out")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)zoomout, sizeof(zoomout), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Undo")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)undo, sizeof(undo), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Redo")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)redo, sizeof(redo), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Volume Mixer")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)volumemixer, sizeof(volumemixer), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Search")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)search, sizeof(search), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Home")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)home, sizeof(home), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  else if (buttonsArray.btnImages[i] == "Right Click")
+  {
+    int16_t rc = png.openFLASH((uint8_t *)rightclick, sizeof(rightclick), pngDraw);
+
+    if (rc == PNG_SUCCESS)
+    {
+      Serial.println("Successfully opened png file");
+      xpos = xPos[i] + 2 + (tft.width() / 3) / 2 - png.getWidth() / 2;
+      ypos = yPos[i] + 2 + (tft.height() / 4) / 2 - png.getHeight() / 2;
+      tft.startWrite();
+      uint32_t dt = millis();
+      rc = png.decode(NULL, 0);
+      tft.endWrite();
+      Serial.print(millis() - dt);
+      Serial.println("ms");
+      tft.endWrite();
+    }
+    else
+    {
+      Serial.print("Error: ");
+      Serial.println(rc);
+    }
+  }
+  
   else
   {
     tft.setTextColor(TFT_BLACK);
